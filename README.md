@@ -1,0 +1,1 @@
+Esse mini projeto do segundo ano da faculdade serve apenas para que a pessoa possa realizar o cadastro dela e as informações dela apareçam na tela, mas dessa vez sendo um desenvolvimento de APP para celular, usando o android studio e o expo.go para fazer a virtualização e visualização de como ele ficaria em celular real.
