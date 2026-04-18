@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { View, Text, StyleSheet, Image } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-
 export default function Informa() {
   const [dados, setDados] = useState(null);
 
@@ -22,10 +21,7 @@ export default function Informa() {
     <View style={styles.container}>
       <Text style={styles.title}>Informações</Text>
 
-      <Image
-        source={require("../img/ff.jpeg")} 
-        style={styles.image}
-      />
+      <Image source={require("../img/ff.jpeg")} style={styles.image} />
 
       <View style={styles.card}>
         <Text style={styles.label}>Nome</Text>
@@ -39,11 +35,16 @@ export default function Informa() {
 
         <Text style={styles.label}>Sobre</Text>
         <Text style={styles.value}>{dados.apresentacao}</Text>
+
+        <Text style={styles.label}>CPF</Text>
+        <Text style={styles.value}>{dados.cpf}</Text>
+
+        <Text style={styles.label}>Telefone</Text>
+        <Text style={styles.value}>{dados.telefone}</Text>
       </View>
     </View>
   );
 }
-
 
 const styles = StyleSheet.create({
   container: {
