@@ -9,7 +9,7 @@ export default function Form() {
   const [disciplina, setDisciplina] = useState("");
   const [apresentacao, setApresentacao] = useState("");
 
-  // 🔴 novos campos exigidos no CP2
+  
   const [cpf, setCpf] = useState("");
   const [telefone, setTelefone] = useState("");
 
